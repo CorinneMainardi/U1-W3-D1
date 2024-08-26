@@ -13,6 +13,17 @@ concat();
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
 
+const randomNum = () => {
+  const numbers = [];
+  for (let i = 0; i < 10; i++) {
+    numbers.push(Math.floor(Math.random() * 101));
+  }
+  return numbers;
+};
+
+randomNum();
+console.log(randomNum());
+
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
