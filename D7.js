@@ -27,7 +27,13 @@ console.log(randomNum());
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
-
+const n = [2, 5, 7, 8, 10, 14, 19, 20];
+const pari = () => {
+  const result = n.filter((n) => n % 2 === 0);
+  return result;
+};
+pari();
+console.log(pari());
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
