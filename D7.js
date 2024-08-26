@@ -39,6 +39,16 @@ console.log(pari());
 */
 const numeri = [1, 2, 3, 4, 5, 6];
 
+const sum = () => {
+  let somma = 0;
+
+  numeri.forEach((numero) => {
+    somma += numero;
+  });
+  return somma;
+};
+sum();
+console.log(sum());
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
