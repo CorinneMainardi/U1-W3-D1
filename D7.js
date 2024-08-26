@@ -2,9 +2,13 @@
   Scrivi una funzione per concatenare due stringhe ricevute come parametri, selezionando solamente i primi 2 caratteri della
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
-const string1 = "Hello";
-const string2 = "world!";
-const concat = (string1 = string1, string2 = string2) => console.log();
+const string1 = "Jaimie";
+const string2 = "Leonida";
+const concat = (string1 = "Jamie", string2 = "Leonida") => {
+  const stringResult = string1.slice(0, 2) + string2.slice(-3);
+  console.log(stringResult.toUpperCase());
+};
+concat();
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
